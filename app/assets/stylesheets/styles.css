@@ -11690,7 +11690,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 h1,
