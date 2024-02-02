@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'blog' => 'blog#index'
+  get 'blog/:id' => 'blog#show', as: :blog_show
+  devise_for :admins
+  resources :posts
   get 'main/index'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

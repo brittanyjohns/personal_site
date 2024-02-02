@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>PersonalSite</title>
+    <title>Brittany Johns | Software Engineer</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -12,8 +12,11 @@
     <script src="https://kit.fontawesome.com/7747fb4a3a.js" crossorigin="anonymous"></script>
   </head>
 
-  <body>
-    <main class="mx-auto flex font-sans p-1">
+  <body class="bg-gray-100" id="page-top">
+    <%= render "layouts/navbar" %>
+    <main class="mx-auto flex font-sans pr-5 pb-5">
+             <%= render partial: "layouts/side_nav" %>
+
       <%= yield %>
     </main>
   </body>

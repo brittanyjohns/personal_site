@@ -41,4 +41,7 @@
   .hide {
     display: none;
   }
-  
+
+  .dk-teal {
+    background-color: #004D61;
+  }
