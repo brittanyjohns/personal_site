@@ -24,7 +24,7 @@
                 <%= button_tag "Projects", class: "font-mono text-white", data: { action: "click->sidebar#click", target_id: "projects"} %>
             </li>
             <li class="p-3">
-                <%= link_to "Blog", blog_path, class: "font-mono text-white" %>
+                <%= link_to "Blog", blog_path, class: "font-mono text-white" if @posts&.any? %>
             </li>
         </ul>
     </div>
