@@ -14,4 +14,8 @@ class Post < ApplicationRecord
   has_markdown :content
 
   scope :published, -> { where.not(published_at: nil) }
+
+  def mark_as_published!
+    update!(published_at: Time.current)
+  end
 end

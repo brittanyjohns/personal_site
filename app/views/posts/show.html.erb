@@ -1,4 +1,4 @@
-<div class="md:w-2/3 w-full flex">
+<div class="w-full md:w-2/3 flex flex-col items-center mx-auto bg-white p-10">
   <div class="mx-auto">
   <p class="my-5">
     <strong class="block font-medium mb-1">Published at:</strong>
@@ -14,5 +14,6 @@
       <%= button_to "Destroy this post", post_path(@post), method: :delete, class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 font-medium" %>
     </div>
     <%= link_to "Back to posts", posts_path, class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= button_to "PUBLISH this post", publish_post_path(@post), method: :post, class: "mt-2 rounded-lg py-3 px-5 bg-green-100 font-medium" %>
   </div>
 </div>

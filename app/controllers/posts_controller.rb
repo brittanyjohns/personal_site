@@ -11,6 +11,12 @@ class PostsController < ApplicationController
   def show
   end
 
+  def publish
+    @post = Post.find(params[:id])
+    @post.mark_as_published!
+    redirect_to blog_show_path(@post), notice: "Post was successfully published."
+  end
+
   # GET /posts/new
   def new
     @post = Post.new
