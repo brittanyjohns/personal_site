@@ -12,12 +12,12 @@
     <script src="https://kit.fontawesome.com/7747fb4a3a.js" crossorigin="anonymous"></script>
   </head>
 
-  <body class="bg-gray-100" id="page-top">
+  <body class="relative min-h-screen bg-gradient-to-tr from-white to-gray-200 font-mono" id="page-top">
     <%= render "layouts/navbar" %>
-    <main class="mx-auto flex font-sans pr-5 pb-5">
+      <div id="main-screen" class="container p-2 pb-10 bg-white bg-opacity-50 mx-auto min-h-screen shadow-lg">
              <%= render partial: "layouts/side_nav" %>
 
       <%= yield %>
-    </main>
+    </div>
   </body>
 </html>

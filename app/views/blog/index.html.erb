@@ -1,5 +1,6 @@
-<div class="container-fluid p-4">
-    <div id="posts" class="min-w-full pl-10">
+<div class="p-3">
+  <h1 class="text-4xl font-bold m-3">Blog</h1>
+    <div id="posts" class="min-w-full">
     <% if @posts.empty? %>
       <p class="text-2xl font-bold">
         Under Construction - Check back soon!
@@ -8,4 +9,6 @@
       <%= render @posts %>
     <% end %>
   </div>
+    <%= link_to "Back", root_path, class: "block p-3 border text-center" %>
+
 </div>
