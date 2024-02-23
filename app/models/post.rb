@@ -18,4 +18,10 @@ class Post < ApplicationRecord
   def mark_as_published!
     update!(published_at: Time.current)
   end
+
+  def published?
+    #  Temporarily hide blog
+    false
+    # published_at.present?
+  end
 end

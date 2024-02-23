@@ -10,5 +10,7 @@
     <%= @post.content %>
   </div>
     <%= link_to "Back", blog_path, class: "block p-3 border text-center" %>
+    <%= button_to "PUBLISH this post", publish_post_path(@post), method: :post, class: "mt-2 rounded-lg py-3 px-5 bg-green-100 font-medium" %>
+
 
 </div>
