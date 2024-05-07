@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   get 'blog' => 'blog#index'
   get 'blog/:id' => 'blog#show', as: :blog_show
   get 'blog/:id/edit' => 'blog#edit', as: :blog_edit
+  get 'download_resume' => 'main#download_resume'
   devise_for :admins
   resources :posts do
     member do
