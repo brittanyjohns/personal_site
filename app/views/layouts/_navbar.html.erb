@@ -6,7 +6,7 @@
     </div>
     <div class="flex items-center flex-shrink-0 mr-6">
         <div class="font-semibold text-xl tracking-tight">
-            <%= link_to "Blog", blog_path, class: "block mt-2 lg:inline-block lg:mt-0 hover:text-orange-600" %>
+            <%= link_to "Blog", blog_path, class: "block mt-2 lg:inline-block lg:mt-0 hover:text-orange-600"@posts&.any? && @posts&.first&.published? %>
         </div>
     </div>
 </nav>
